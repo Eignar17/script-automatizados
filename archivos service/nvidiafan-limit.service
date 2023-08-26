@@ -1,0 +1,9 @@
+[Unit]
+Description=Script para controlar la velocidad del ventilador de NVIDIA
+After=multi-user.target
+
+[Service]
+ExecStart=/home/eignar/.bin/main/fixes/nvidiafan-limit.sh
+
+[Install]
+WantedBy=multi-user.target

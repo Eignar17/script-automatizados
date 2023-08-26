@@ -1,0 +1,10 @@
+[Unit]
+Description=Script to adjust fan speed based on CPU temperature and frequency
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/eignar/.bin/main/fixes/cpufan-limit.sh
+
+[Install]
+WantedBy=multi-user.target

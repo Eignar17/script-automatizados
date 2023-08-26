@@ -1,0 +1,9 @@
+[Unit]
+Description=Script to limit the maximum CPU frequency
+After=network.target
+
+[Service]
+ExecStart=/home/eignar/.bin/main/fixes/limit-cpu.sh
+
+[Install]
+WantedBy=default.target
